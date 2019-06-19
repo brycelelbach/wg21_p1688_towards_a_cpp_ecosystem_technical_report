@@ -5,10 +5,10 @@ Author: Bryce Adelstein Lelbach <brycelelbach@gmail.com>
 Distributed under the Boost Software License v1.0 (boost.org/LICENSE_1_0.txt)
 -->
 <pre class='metadata'>
-Title: Summary of the Tooling Study Group's Pre-Cologne Telecons on Modules Tooling Interactions
-Shortname: D1688
+Title: Towards a C++ Ecosystem Technical Report
+Shortname: P1688
 Revision: 0
-Status: D
+Status: P
 Group: WG21
 Audience: EWG, SG15
 Editor: Bryce Adelstein Lelbach, NVIDIA, brycelelbach@gmail.com
@@ -102,7 +102,7 @@ Since that meeting, the Tooling Study Group has held a series of telecons to
 One of the outcomes of these telecons is an outline and high-level design for
   the proposed Technical Report, as described below.
 
-## Proposed Timeline ## {#proposed-timeline}
+# Timeline # {#proposed-timeline}
 
 The Technical Report should be feature-driven not deadline-driven; we should
   ship it when it's ready.
@@ -112,7 +112,7 @@ The Technical Report will be most useful if it is released **after** we have
   the C++ community begins widespread adoption of modules, so that the report
   is available to aid during the transition.
 
-## Proposed Outline ## {#proposed-outline}
+# Outline # {#proposed-outline}
 
 We suggest that the Technical Report be split into three sections:
 
@@ -150,7 +150,7 @@ We suggest that the Technical Report be split into three sections:
     - **Module Granularity:** What size should modules be to maximize performance and usability? Does the cost of an import scale with the size of the module?
 - **Guidance:** Concise set of guidelines for the C++ ecosystem. Addresses questions raised in Usage and draws conclusions based on results from Findings. 
 
-## Format ## {#format}
+# Format # {#format}
 
 The TR will likely need to be in Latex, using a fresh fork of the IS Latex that
   has been customized, similar to the Coroutines TS Latex.
