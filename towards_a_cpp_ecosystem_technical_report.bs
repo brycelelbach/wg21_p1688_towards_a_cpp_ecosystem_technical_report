@@ -102,6 +102,14 @@ Since that meeting, the Tooling Study Group has held a series of telecons to
 One of the outcomes of these telecons is an outline and high-level design for
   the proposed Technical Report, as described below.
 
+# Goals # {#goals}
+
+The goal of the proposed C++ Ecosystem Technical Report are:
+
+- Teach best practices for utilizing modules to all stakeholders.
+- Document aspects of C++ modules that are out of the scope of the C++ International Standard.
+- Identify interoperability and differentiation between different C++ implementations.
+
 # Timeline # {#proposed-timeline}
 
 The Technical Report should be feature-driven not deadline-driven; we should
@@ -139,13 +147,14 @@ We suggest that the Technical Report be split into three sections:
         - Building Compiled Module Interfaces (CMIs) only for tooling consumption.
         - Dependency scanning vs explicit module dependencies build.
 - **Findings:** Focused technical sections that explore open questions in detail and present the results of field experience. Unopinionated.
-    - **Module Mapping:** What approaches and formats are effective for communicating module name <-> module-interface/header file mappings? Module name + configuration <-> Compiled Module Interface (CMI) mappings?
-    - **Module Naming:** How should module names be structured? How do we avoid conflicts between different projects? How do we deal with versioning?
+    - **Packaging Modules (<a href="https://wg21.link/P1767">P1767</a>):** How should packaging systems use modules? How are the contents of modular packages described, located, and consumed?
+    - **Module Mapping (<a href="https://wg21.link/P1302">P1302</a>, <a href="https://wg21.link/P1484">P1484</a>):** What approaches and formats are effective for communicating module name <-> module-interface/header file mappings? Module name + configuration <-> Compiled Module Interface (CMI) mappings?
+    - **Module Naming (<a href="https://wg21.link/P1634">P1634</a>):** How should module names be structured? How do we avoid conflicts between different projects? How do we deal with versioning?
     - **Module ABI:** How do we maintain stable ABIs in a modular world?
-    - **Codebase Transition Path:** How should projects transition from headers to modules? How should projects support both pre-C++20 headers and C++20 modules?
+    - **Module Transition Path:** How should projects transition from headers to modules? How should projects support both pre-C++20 headers and C++20 modules?
     - **Compiled Module Interface (CMI) Configuration:** How do we find the CMI that was compiled in the same way as the current TU? What defines the configuration of a CMI?
-    - **Compiled Module Interface (CMI) Distribution:** How effective is the distribution of CMIs alongside module-interface/header files?
-    - **Dependency Scanning:** How do we do dependency scanning in a modular world? Can we make it fast?
+    - **Compiled Module Interface (CMI) Distribution (<a href="https://wg21.link/P1788">P1788</a>):** How effective is the distribution of CMIs alongside module-interface/header files?
+    - **Dependency Scanning (<a href="https://wg21.link/P1689">P1689</a>):** How do we do dependency scanning in a modular world? Can we make it fast?
     - **Build Performance:** How do modules impact build performance? What impact does modules have on parallelism in C++ builds?
     - **Module Granularity:** What size should modules be to maximize performance and usability? Does the cost of an import scale with the size of the module?
 - **Guidance:** Concise set of guidelines for the C++ ecosystem. Addresses questions raised in Usage and draws conclusions based on results from Findings. 
