@@ -147,14 +147,14 @@ We suggest that the Technical Report be split into three sections:
         - Building Compiled Module Interfaces (CMIs) only for tooling consumption.
         - Dependency scanning vs explicit module dependencies build.
 - **Findings:** Focused technical sections that explore open questions in detail and present the results of field experience. Unopinionated.
-    - **Packaging Modules (<a href="https://wg21.link/P1767">P1767</a>):** How should packaging systems use modules? How are the contents of modular packages described, located, and consumed?
-    - **Module Mapping (<a href="https://wg21.link/P1302">P1302</a>, <a href="https://wg21.link/P1484">P1484</a>):** What approaches and formats are effective for communicating module name <-> module-interface/header file mappings? Module name + configuration <-> Compiled Module Interface (CMI) mappings?
-    - **Module Naming (<a href="https://wg21.link/P1634">P1634</a>):** How should module names be structured? How do we avoid conflicts between different projects? How do we deal with versioning?
+    - <b>Packaging Modules (<a href="https://wg21.link/P1767">P1767</a>):</b> How should packaging systems use modules? How are the contents of modular packages described, located, and consumed?
+    - <b>Module Mapping (<a href="https://wg21.link/P1302">P1302</a>, <a href="https://wg21.link/P1484">P1484</a>):</b> What approaches and formats are effective for communicating module name <-> module-interface/header file mappings? Module name + configuration <-> Compiled Module Interface (CMI) mappings?
+    - <b>Module Naming (<a href="https://wg21.link/P1634">P1634</a>):</b> How should module names be structured? How do we avoid conflicts between different projects? How do we deal with versioning?
     - **Module ABI:** How do we maintain stable ABIs in a modular world?
     - **Module Transition Path:** How should projects transition from headers to modules? How should projects support both pre-C++20 headers and C++20 modules?
     - **Compiled Module Interface (CMI) Configuration:** How do we find the CMI that was compiled in the same way as the current TU? What defines the configuration of a CMI?
-    - **Compiled Module Interface (CMI) Distribution (<a href="https://wg21.link/P1788">P1788</a>):** How effective is the distribution of CMIs alongside module-interface/header files?
-    - **Dependency Scanning (<a href="https://wg21.link/P1689">P1689</a>):** How do we do dependency scanning in a modular world? Can we make it fast?
+    - <b>Compiled Module Interface (CMI) Distribution (<a href="https://wg21.link/P1788">P1788</a>):</b> How effective is the distribution of CMIs alongside module-interface/header files?
+    - <b>Dependency Scanning (<a href="https://wg21.link/P1689">P1689</a>):</b> How do we do dependency scanning in a modular world? Can we make it fast?
     - **Build Performance:** How do modules impact build performance? What impact does modules have on parallelism in C++ builds?
     - **Module Granularity:** What size should modules be to maximize performance and usability? Does the cost of an import scale with the size of the module?
 - **Guidance:** Concise set of guidelines for the C++ ecosystem. Addresses questions raised in Usage and draws conclusions based on results from Findings. 
