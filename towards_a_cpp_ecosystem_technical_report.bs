@@ -6,13 +6,13 @@ Distributed under the Boost Software License v1.0 (boost.org/LICENSE_1_0.txt)
 -->
 <pre class='metadata'>
 Title: Towards a C++ Ecosystem Technical Report
-Shortname: P1688
+Shortname: D1688
 Revision: 0
-Status: P
+Status: D
 Group: WG21
 Audience: EWG, SG15
 Editor: Bryce Adelstein Lelbach, NVIDIA, brycelelbach@gmail.com
-URL: https://wg21.link/P1688R0
+URL: https://wg21.link/P1688R1
 !Source: <a href="https://github.com/brycelelbach/wg21_p1688_towards_a_cpp_ecosystem_technical_report/blob/master/towards_a_cpp_ecosystem_technical_report.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p1688_towards_a_cpp_ecosystem_technical_report/issues
 Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
